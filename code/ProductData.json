@@ -16,10 +16,10 @@
                 },
                 "ImageSource": "Images/MacBookPro-front.png",
                 "ImageSide": [
-                    "./images/macbookpro-keyboard.png",
-                    "./images/macbookpro-side.png",
-                    "./images/macbookpro-input.png",
-                    "./images/macbookpro-close.png"
+                    "Images/macbookpro-keyboard.png",
+                    "Images/macbookpro-side.png",
+                    "Images/macbookpro-input.png",
+                    "Images/macbookpro-close.png"
                 ]
             },
             "Macbook_Air": {
@@ -37,10 +37,10 @@
                 },
                 "ImageSource": "Images/MacBookAir-front.png",
                 "ImageSide": [
-                    "./images/macbookair-keyboard.png",
-                    "./images/macbookair-side.png",
-                    "./images/macbookair-input.png",
-                    "./images/macbookair-close.png"
+                    "Images/macbookair-keyboard.png",
+                    "Images/macbookair-side.png",
+                    "Images/macbookair-input.png",
+                    "Images/macbookair-close.png"
                 ]
             },
             "iMac": {
@@ -58,10 +58,10 @@
                 },
                 "ImageSource": "Images/iMac-front.png",
                 "ImageSide": [
-                    "./images/imac-colors.png",
-                    "./images/imac-back.png",
-                    "./images/imac-input.png",
-                    "./images/imac-side.png"
+                    "Images/imac-colors.png",
+                    "Images/imac-back.png",
+                    "Images/imac-input.png",
+                    "Images/imac-side.png"
                 ]
             }
         },
@@ -79,12 +79,12 @@
                     "Rear_Camera": "48 MP Fusion Main (wide) with sensor-shift OIS",
                     "Front_Camera": "18 MP Center Stage camera (ƒ/1.9)"
                 },
-                "ImageSource": "../images/iPhone17Pro.png",
+                "ImageSource": "Images/iPhone17Pro.png",
                 "ImageSide": [
-                    "../images/iphone17pro-main.png",
-                    "../images/iphone17pro-1st.png",
-                    "../images/iphone17pro-side.png",
-                    "../images/iPhone17Pro.png"
+                    "Images/iphone17pro-main.png",
+                    "Images/iphone17pro-1st.png",
+                    "Images/iphone17pro-side.png",
+                    "Images/iPhone17Pro.png"
                 ]
             },
             "iPhone_Air": {
@@ -98,80 +98,84 @@
                     "Storage_Option": "256GB / 512GB / 1TB",
                     "Battery_Usage": "Up to ~27 hours video playback",
                     "Rear_Camera": "48MP Fusion Main (wide) with sensor-shift OIS.",
-                    "Front_Camera": "18MP Center Stage, with features like AI framing and “Dual Capture” video combining front + rear perspectives."
+                    "Front_Camera": "18MP Center Stage"
                 },
-                "ImageSource": "../images/iPhoneAir.png",
+                "ImageSource": "Images/iPhoneAir.png",
                 "ImageSide": [
-                    "../images/iphoneair-main.png",
-                    "../images/iphoneair-fronts.png",
-                    "../images/iphoneair-back.png",
-                    "../images/iphoneair-camera.png"
+                    "Images/iphoneair-main.png",
+                    "Images/iphoneair-fronts.png",
+                    "Images/iphoneair-back.png",
+                    "Images/iphoneair-camera.png"
                 ]
             },
+
             "iPhone_17": {
                 "ProductName": "iPhone 17",
                 "Rating": " ★★★★☆",
                 "Price": "52,990",
                 "Specs": {
                     "Display": "6.3-inch Super Retina XDR OLED, all-screen, with ProMotion (adaptive up to 120Hz).",
-                    "Resolution": "2622×1206 pixels (≈460 ppi); 1000 nits",
+                    "Resolution": "2622×1206 pixels (≈460 ppi)",
                     "Memory": "12 GB",
                     "Storage_Option": "256GB, 512GB.",
                     "Battery_Usage": "Up to ~30 hours video playback",
-                    "Rear_Camera": "Dual camera system: 48 MP Fusion Main with 2× optical-quality telephoto.",
-                    "Front_Camera": "18 MP “Center Stage” camera; ƒ/1.9 aperture, autofocus."
+                    "Rear_Camera": "Dual 48 MP Fusion Main",
+                    "Front_Camera": "18 MP Center Stage"
                 },
-                "ImageSource": "../images/iPhone17.png",
+                "ImageSource": "Images/iPhone17.png",
                 "ImageSide": [
-                    "../images/iphone17-main.png",
-                    "../images/iphone17-fronts.png",
-                    "../images/iphone17-back.png",
-                    "../images/iphone17-camera.png"
+                    "Images/iphone17-main.png",
+                    "Images/iphone17-fronts.png",
+                    "Images/iphone17-back.png",
+                    "Images/iphone17-camera.png"
                 ]
             },
+
             "iPhone_16Plus": {
                 "ProductName": "iPhone 16 Plus",
                 "Rating": " ★★★★☆",
                 "Price": "42,990",
                 "Specs": {
-                    "Display": "6.7-inch Super Retina XDR OLED, all-screen design, Dynamic Island, HDR, True Tone, Wide color (P3), 2796×1290 pixels at ~460 ppi",
-                    "Resolution": "2736 × 1260 pixels (~460 ppi)",
+                    "Display": "6.7-inch Super Retina XDR OLED, Dynamic Island, HDR, True Tone",
+                    "Resolution": "2796×1290 pixels (~460 ppi)",
                     "Memory": "8 GB",
                     "Storage_Option": "128GB / 256GB / 512GB / 1TB",
                     "Battery_Usage": "Audio playback up to ~100 hours",
-                    "Rear_Camera": "8 MP Fusion Main (wide), ƒ/1.6, sensor-shift OIS.",
-                    "Front_Camera": "12 MP Ultra Wide, ƒ/2.2, 120° field of view"
+                    "Rear_Camera": "48 MP Fusion",
+                    "Front_Camera": "12 MP Ultra Wide"
                 },
-                "ImageSource": "../images/iPhone16Plus.png",
+                "ImageSource": "Images/iPhone16Plus.png",
                 "ImageSide": [
-                    "../images/iphone16-main.png",
-                    "../images/iphone16-fronts.png",
-                    "../images/iphone16-back.png",
-                    "../images/iphone16-camera.png"
+                    "Images/iphone16-main.png",
+                    "Images/iphone16-fronts.png",
+                    "Images/iphone16-back.png",
+                    "Images/iphone16-camera.png"
                 ]
             },
+
             "iPhone_16e": {
                 "ProductName": "iPhone 16e",
                 "Rating": "★★★★☆",
                 "Price": "42,990",
                 "Specs": {
-                    "Display": "6.1-inch Super Retina XDR OLED, 2532×1170 resolution, 460 ppi",
-                    "Resolution": "Typical brightness ~800 nits, HDR peak ~1,200 nits, contrast ratio ~2,000,000:1",
+                    "Display": "6.1-inch Super Retina XDR OLED, 2532×1170 resolution",
+                    "Resolution": "800 nits typical, 1200 nits HDR",
                     "Memory": "",
-                    "Storage_Option": "128 GB, 256 GB, 512 GB",
-                    "Battery_Usage": "Up to 26 hours of video playback",
-                    "Rear_Camera": "48 MP Fusion camera (ƒ/1.6, sensor-shift OIS) with built-in 2× optical zoom crop",
-                    "Front_Camera": "12 MP TrueDepth camera"
+                    "Storage_Option": "128 GB / 256 GB / 512 GB",
+                    "Battery_Usage": "Up to 26 hours video playback",
+                    "Rear_Camera": "48 MP Fusion",
+                    "Front_Camera": "12 MP TrueDepth"
                 },
-                "ImageSource": "../images/iPhone16e.png",
+                "ImageSource": "Images/iPhone16e.png",
                 "ImageSide": [
-                    "../images/iphone16e-main.png",
-                    "../images/iphone16e-fronts.png",
-                    "../images/iphone16e-back.png",
-                    "../images/iphone16e-camera.png"
+                    "Images/iphone16e-main.png",
+                    "Images/iphone16e-fronts.png",
+                    "Images/iphone16e-back.png",
+                    "Images/iphone16e-camera.png"
                 ]
             }
         },
+
         {
             "Ipad_Pro": {
                 "ProductName": "iPad Pro",
@@ -180,173 +184,177 @@
                 "Specs": {
                     "Display": "11-inch Liquid Retina (IPS)",
                     "Chip": "Apple A16",
-                    "Storage": "128 GB, 256 GB, 512 GB",
-                    "Battery_Life": "Up to ~10 hours of usage (typical)",
-                    "Rear_Camera": "12 MP (ƒ/1.8)",
-                    "Front_Camera": "12 MP (Center Stage support)"
+                    "Storage": "128 / 256 / 512 GB",
+                    "Battery_Life": "10 hours",
+                    "Rear_Camera": "12 MP",
+                    "Front_Camera": "12 MP Center Stage"
                 },
-                "ImageSource": "../images/iPadPro.png",
+                "ImageSource": "Images/iPadPro.png",
                 "ImageSide": [
-                    "../images/ipadpro-main-.png",
-                    "../images/ipadpro-fronts.png",
-                    "../images/ipadpro-side.png",
-                    "../images/iphone16e-camera.png"
+                    "Images/ipadpro-main-.png",
+                    "Images/ipadpro-fronts.png",
+                    "Images/ipadpro-side.png",
+                    "Images/iphone16e-camera.png"
                 ]
             },
+
             "Ipad_Air": {
                 "ProductName": "iPad Air",
                 "Rating": " ★★★★☆",
                 "Price": "42,990",
                 "Specs": {
-                    "Display": "11-inch model: Liquid Retina, 2360 × 1640 pixels, 264 ppi, 500 nits brightness",
-                    "Chip": "Apple M3 chip: 8-core CPU (4 performance + 4 efficiency cores)",
-                    "Storage": "Configurations: 128 GB / 256 GB / 512 GB / 1 TB",
-                    "Battery_Life": "Up to ~10 hours of usage (typical)",
-                    "Rear_Camera": "12 MP Wide camera with Smart HDR and 4K video support",
-                    "Front_Camera": "12 MP “Center Stage” ultra-wide camera for video calls and framing"
+                    "Display": "11-inch Liquid Retina",
+                    "Chip": "Apple M3",
+                    "Storage": "128 / 256 / 512 / 1TB",
+                    "Battery_Life": "10 hours",
+                    "Rear_Camera": "12 MP",
+                    "Front_Camera": "12 MP Center Stage"
                 },
-                "ImageSource": "../images/iPadAir.png",
+                "ImageSource": "Images/iPadAir.png",
                 "ImageSide": [
-                    "../images/ipadair-main.png",
-                    "../images/ipadair-fronts.png",
-                    "../images/ipadair-side.png",
-                    "../images/ipadair-camera.png"
+                    "Images/ipadair-main.png",
+                    "Images/ipadair-fronts.png",
+                    "Images/ipadair-side.png",
+                    "Images/ipadair-camera.png"
                 ]
             },
+
             "Ipad": {
                 "ProductName": "iPad",
                 "Rating": " ★★★★☆",
                 "Price": "24,990",
                 "Specs": {
-                    "Display": "11-inch Liquid Retina (IPS)",
+                    "Display": "11-inch Liquid Retina",
                     "Chip": "Apple A16",
-                    "Storage": "128 GB, 256 GB, 512 GB",
-                    "Battery_Life": "Up to ~10 hours of usage (typical)",
-                    "Rear_Camera": "12 MP (ƒ/1.8)",
-                    "Front_Camera": "12 MP (Center Stage support) "
+                    "Storage": "128 / 256 / 512 GB",
+                    "Battery_Life": "10 hours",
+                    "Rear_Camera": "12 MP",
+                    "Front_Camera": "12 MP"
                 },
-                "ImageSource": "../images/iPad.png",
+                "ImageSource": "Images/iPad.png",
                 "ImageSide": [
-                    "../images/ipad-main.png",
-                    "../images/ipad-fronts.png",
-                    "../images/ipad-back.png",
-                    "../images/ipad-camera.png"
+                    "Images/ipad-main.png",
+                    "Images/ipad-fronts.png",
+                    "Images/ipad-back.png",
+                    "Images/ipad-camera.png"
                 ]
             },
+
             "Ipad_Mini": {
                 "ProductName": "iPad Mini",
                 "Rating": " ★★★★☆",
                 "Price": "34,990",
                 "Specs": {
-                    "Display": "8.3-inch Liquid Retina (2266×1488 pixels at ~326 ppi), P3 wide color gamut, True Tone, fully laminated and anti-reflective.",
-                    "Chip": "A17 Pro chip with 6-core CPU (2 performance + 4 efficiency cores), 5-core GPU, and 16-core Neural Engine",
-                    "Storage": "128 GB, 256 GB, 512 GB.",
-                    "Battery_Life": "Up to ~10 hours of usage (typical)",
-                    "Rear_Camera": "12 MP Wide (ƒ/1.8), supports Smart HDR, 4K video recording.",
-                    "Front_Camera": "12 MP (for videos / FaceTime) with Center Stage and ultra-wide field of view. "
+                    "Display": "8.3-inch Liquid Retina",
+                    "Chip": "A17 Pro",
+                    "Storage": "128 / 256 / 512 GB",
+                    "Battery_Life": "10 hours",
+                    "Rear_Camera": "12 MP",
+                    "Front_Camera": "12 MP Center Stage"
                 },
-                "ImageSource": "../images/iPadmini.png",
+                "ImageSource": "Images/iPadmini.png",
                 "ImageSide": [
-                    "../images/ipadmini-main.png",
-                    "../images/ipadamini-side.png",
-                    "../images/ipadmini-back.png",
-                    "../images/ipadmini-camera.png"
+                    "Images/ipadmini-main.png",
+                    "Images/ipadamini-side.png",
+                    "Images/ipadmini-back.png",
+                    "Images/ipadmini-camera.png"
                 ]
             }
         },
+
         {
             "AppleWatch_Series11": {
                 "ProductName": "Apple Watch Series 11",
                 "Rating": "★★★★☆",
                 "Price": "26,990",
                 "Specs": {
-                    "Display": "42 mm: 36 × 42 × 9.7 mm, display area ~989 mm²",
-                    "Chip": "Apple M3 chip: 8-core CPU (4 performance + 4 efficiency cores)",
-                    "Storage_Option": "128 GB / 256 GB / 512 GB / 1 TB",
-                    "Battery_Usage": "Up to ~10 hours of usage (typical)",
-                    "Rear_Camera": "12 MP Wide camera with Smart HDR and 4K video support",
-                    "Front_Camera": "12 MP “Center Stage” ultra-wide camera for video calls and framing"
+                    "Display": "42 mm",
+                    "Chip": "Apple M3",
+                    "Storage_Option": "128 GB / 256 / 512 GB / 1 TB",
+                    "Battery_Usage": "10 hours"
                 },
-                "ImageSource": "../images/AWSeries11.png",
+                "ImageSource": "Images/AWSeries11.png",
                 "ImageSide": [
-                    "../images/aws11-1.png",
-                    "../images/aws11-2.png",
-                    "../images/aws11-3.png",
-                    "../images/aws11-4.png"
+                    "Images/aws11-1.png",
+                    "Images/aws11-2.png",
+                    "Images/aws11-3.png",
+                    "Images/aws11-4.png"
                 ]
             },
+
             "AppleWatch_SE3": {
                 "ProductName": "Apple Watch SE 3",
                 "Rating": "★★★★☆",
                 "Price": "15,990",
                 "Specs": {
-                    "Display": "Always-On Retina OLED with LTPO, up to ~1,000 nits peak brightness",
-                    "Case": "Aluminium case in 40 mm or 44 mm sizes",
-                    "Storage_Option": "S10 chip + 64 GB capacity",
-                    "Battery_Usage": "Up to 18 hours of typical use; up to 32 hours in Low Power Mode. Fast-charging: ~80% in 45 minutes; 15 minutes charge gives ~8 hours use"
+                    "Display": "Retina OLED",
+                    "Case": "40 mm / 44 mm",
+                    "Storage_Option": "64 GB",
+                    "Battery_Usage": "18 hours"
                 },
-                "ImageSource": "../images/AWSE3.png",
-                 "ImageSide": [
-                    "../images/awse3-1.png",
-                    "../images/awse3-2.png",
-                    "../images/awse3-3.png",
-                    "../images/awse3-4.png"
+                "ImageSource": "Images/AWSE3.png",
+                "ImageSide": [
+                    "Images/awse3-1.png",
+                    "Images/awse3-2.png",
+                    "Images/awse3-3.png",
+                    "Images/awse3-4.png"
                 ]
             },
+
             "AppleWatch_HermesSeries11": {
                 "ProductName": "Apple Watch Hermes Series 11",
                 "Rating": "★★★★☆",
                 "Price": "80,990",
                 "Specs": {
-                    "Display": "Always-On Retina LTPO OLED display; Hermès edition uses Sapphire front crystal; peak brightness up to ~2,000 nits",
-                    "Cases": "42 mm and 46 mm titanium (Hermès edition uses silver-titanium case)",
-                    "Storage_Option": "64 GB capacity",
-                    "Battery_Usage": "Up to ~24 hours typical use; up to ~38 hours in Low Power Mode. Fast charging supported"
+                    "Display": "Sapphire OLED",
+                    "Cases": "42 mm / 46 mm Titanium",
+                    "Storage_Option": "64 GB",
+                    "Battery_Usage": "24 hours"
                 },
-                "ImageSource": "../images/AWHermesSeries11.png",
-                  "ImageSide": [
-                    "../images/awhs11-1.png",
-                    "../images/awhs11-2.png",
-                    "../images/awhs11-3.png",
-                    "../images/awhs11-4.png"
+                "ImageSource": "Images/AWHermesSeries11.png",
+                "ImageSide": [
+                    "Images/awhs11-1.png",
+                    "Images/awhs11-2.png",
+                    "Images/awhs11-3.png",
+                    "Images/awhs11-4.png"
                 ]
             },
+
             "AppleWatch_HermesUltra3": {
                 "ProductName": "Apple Watch Hermes Ultra 3",
                 "Rating": "★★★★☆",
                 "Price": "88,990",
                 "Specs": {
-                    "Display": "Always-On Retina, wide-angle LTPO3 OLED, 422 x 514 pixels, ~1,245 mm² display area, peak brightness up to 3,000 nits",
-                    "Case": "49 mm Grade-5 Titanium (Natural or Black finish)",
-                    "Storage_Option": "S10 chip, 64-bit dual-core, 4-core Neural Engine, 64 GB capacity",
-                    "Battery_Usage": "Up to 42 hours in normal use; up to 72 hours in Low Power Mode. Fast-charging: 80% in about 45 minutes"
+                    "Display": "LTPO3 OLED, 3000 nits",
+                    "Case": "49 mm Titanium",
+                    "Storage_Option": "64 GB",
+                    "Battery_Usage": "42 hours"
                 },
-                "ImageSource": "../images/AWHermesUltra3.png",
-                 "ImageSide": [
-                    "../images/awhu3-1.png",
-                    "../images/awhu3-2.png",
-                    "../images/awhu3-3.png",
-                    "../images/awhu3-4.png"
+                "ImageSource": "Images/AWHermesUltra3.png",
+                "ImageSide": [
+                    "Images/awhu3-1.png",
+                    "Images/awhu3-2.png",
+                    "Images/awhu3-3.png",
+                    "Images/awhu3-4.png"
                 ]
             },
+
             "AppleWatch_Ultra3": {
                 "ProductName": "Apple Watch Ultra 3",
                 "Rating": "★★★★☆",
                 "Price": "54,990",
                 "Specs": {
-                    "Display": "On Retina wide-angle LTPO3 OLED, 422 × 514 pixels (active area roughly 1,245 mm²), up to ~3,000 nits peak brightness",
-                    "Case": "Grade-5 Titanium (Natural or Black), 49 mm size",
-                    "Storage_Option": "64 GB storage",
-                    "Battery_Usage": "Up to ~42 hours of normal use; up to ~72 hours in Low Power Mode",
-                    "Rear_Camera": "12 MP Wide camera with Smart HDR and 4K video support",
-                    "Front_Camera": "12 MP “Center Stage” ultra-wide camera for video calls and framing"
+                    "Display": "LTPO3 OLED",
+                    "Case": "49 mm Titanium",
+                    "Storage_Option": "64 GB",
+                    "Battery_Usage": "42 hours"
                 },
-                "ImageSource": "../images/AWUltra3.png",
-                 "ImageSide": [
-                    "../images/awhs11-1.png",
-                    "../images/awhs11-2.png",
-                    "../images/awhs11-3.png",
-                    "../images/awhs11-4.png"
+                "ImageSource": "Images/AWUltra3.png",
+                "ImageSide": [
+                    "Images/awhs11-1.png",
+                    "Images/awhs11-2.png",
+                    "Images/awhs11-3.png",
+                    "Images/awhs11-4.png"
                 ]
             }
         }
