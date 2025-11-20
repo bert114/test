@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+
+.apple-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  height: 80px;
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+}
+
+.logo {
+  width: 50px; 
+  height: 50px;
+  background-image: url('CSS FILES/applelogo2.png'); 
+  background-repeat: no-repeat;
+  background-size: contain;  
+  background-position: center;
+  cursor: pointer;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4)); 
+  transition: transform 0.2s ease, filter 0.3s ease;
+
+}
+
+.logo a {
+  position: relative;
+  transition: color 0.3s;
+  filter: drop-shadow(2px 2px 2px black);
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 60px;
+  top: 10px;
+  font-size: 25px;
+  
+}
+
+
+
+
+.navbar a {
+  filter: drop-shadow(2px 2px 2px black);
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #999;
+}
+
+
+.main {
+  background-image: url('Images/applebackground.gif'); 
+  background-repeat: no-repeat;
+  background-size: cover;      
+  background-position: center; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 30px;
+  color: white;
+}
+
+.main-text h1 {
+  font-size: 70px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.main-text p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.btn-shop {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.btn-shop:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+
+.product-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 120px 50px;
+  background-color: #111;
+}
+
+.product-card {
+  width: 300px;
+  height: 350px;
+  background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+}
+
+.product-image {
+  width: 180px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 5px 15px rgba(255,255,255,0.3));
+}
+
+.product-name {
+  filter: drop-shadow(2px 5px 5px #bbb);
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.product-desc {
+  filter: drop-shadow(0 0 5px #bbb);
+  color: #bbb;
+  font-size: 15px;
+}
+
+
+.apple-footer {
+  text-align: center;
+  padding: 40px;
+  background-color: #000;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  color: #888;
+}
+
+.checkout-btn, .remove-btn {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+button-container {
+  display: flex;
+  gap: 10px;
+}
+

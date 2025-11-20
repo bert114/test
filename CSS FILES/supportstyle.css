@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+  }
+
+.apple-header {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 80px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+   height: 80px;
+   backdrop-filter: blur(20px) saturate(200%);
+   -webkit-backdrop-filter: blur(20px) saturate(200%);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+ 
+ }
+
+ .logo {
+    width: 50px; 
+    height: 50px;
+    background-image: url('applelogo2.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;  
+    background-position: center;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4)); 
+    transition: transform 0.2s ease, filter 0.3s ease;
+  
+  }
+  
+  .logo a {
+    position: relative;
+    transition: color 0.3s;
+    filter: drop-shadow(2px 2px 2px black);
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 60px;
+    top: 10px;
+    font-size: 25px;
+    
+  }
+
+  .navbar a {
+    filter: drop-shadow(2px 2px 2px black);
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #999;
+  }
+
+  support-section {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.support-section h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.support-section p {
+  color: #aaa;
+  margin-bottom: 40px;
+}
+
+.support-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.support-card {
+  background: linear-gradient(145deg, #1a1a1a, #0e0e0e);
+  width: 300px;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.support-card h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.support-card p {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+.support-card button {
+  margin-top: 15px;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.support-card button:hover {
+  background-color: #ddd;
+}

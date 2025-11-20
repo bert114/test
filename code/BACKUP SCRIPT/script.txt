@@ -1,0 +1,72 @@
+// script.js
+window.viewProduct = async function (keyName, id) {
+    console.log("Viewing product:", keyName);
+    alert(`keyName:${keyName} productID:${id}`);
+    // Example redirect
+    window.location.href = `viewProduct.html?product=${keyName}`;
+
+
+    const response = await fetch('./code/ProductData.json');
+    if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
+
+    const data = await response.json();
+    const category = data.Product[id];
+
+    const container = document.querySelector('.product-card');
+    container.innerHTML = "";
+
+    alert(category.keyName.ImageSource);
+    const div = document.createElement("div");
+    div.classList.add("product-main");
+    div.innerHTML = `
+        <img src="${category.keyName.ImageSource}" alt="MacBookPro" class="product-image">
+
+            <div class="product-info">
+                <h1 class="prod-name">${category.keyName.ProductName}</h1>
+                <div class="star-rating">
+                    ★★★★☆
+                </div>
+                <h3 class="prod-price">Price: ₱64,990</h3></p>
+                <ul class="prod-specs">
+                    <li><b>Display: </b>14-inch or 16-inch Liquid Retina XDR</li>
+                    <li><b>Chip: </b>Apple M3 / M3 Pro / M3 Max (varies by model)</li>
+                    <li><b>Memory: </b>16GB, 32GB, or 64GB unified memory</li>
+                    <li><b>Storage: </b>512GB – 8TB SSD</li>
+                    <li><b>Battery Life: </b>Up to 18 hours</li>
+                    <li><b>Ports: </b>Thunderbolt 4 (USB-C), HDMI, SDXC card slot, MagSafe 3</li>
+                    <li><b>Operating System: </b>macOS Sonoma</li>   
+                </ul>
+                
+                <div class="color-picker"><label>Colors:</label>
+                 
+                    <button class="color-circle1" style="background-color: #2a2f39;" aria-label="Black"></button>
+                    
+                    <button class="color-circle" style="background-color: #e5e5e5;" aria-label="Gray"></button>
+                </div>
+
+                
+                <div class="prod-size"> Size:
+                    <button class="size1">14-inch</button>
+                    <button class="size2">16-inch</button>
+                </div>
+              
+                <div class="quantity-container">
+                    <label for="quantity">Quantity:</label>
+                    <div class="quantity-box">
+                    <button class="quantity-btn">−</button>
+                    <input type="number" id="quantity" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn">+</button>
+                    </div>
+                </div>
+
+                <div class="button-group">
+                    <button class="buy">Buy Now</button>
+                    <button class="add">Add Cart</button>
+                </div>
+                
+            </div>
+
+      `;
+    container.appendChild(div);
+
+};

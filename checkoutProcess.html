@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Process Page</title>
+  <link rel="stylesheet" href="CSS FILES/checkout.css">
+      <link rel="icon" type="image/png" href="./Images/FAVICON.png">
+</head>
+
+<body>
+  <header class="apple-header">
+    <div class="logo"> <a id="home-page" href="AppleWebsite.html">Home</a></div>
+    <nav class="navbar">
+      <a href="products.html?category=Mac">Mac</a>
+      <a href="products.html?category=iPhone">iPhone</a>
+      <a href="products.html?category=iPad">iPad</a>
+      <a href="products.html?category=Watch">Watch</a>
+      <a href="supportpage.html">Support</a>
+      <a href="MainCheckOutpage.html">Checkout</a>
+      <a href="cartpage.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="checkout-section">
+    <h1>Checkout Process</h1>
+
+    <div class="checkout-item">
+      <!--
+            <img src="images/AWSeries11.png" alt="Apple Watch Series 11">
+      <div class="checkout-details">
+        <h2>Apple Watch Series 11</h2>
+        <p>₱39,990</p>
+      </div>
+      -->
+
+    </div>
+
+    <form class="checkout-form">
+      <h3>Required Details</h3>
+      <input type="text" placeholder="Your Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="City" required>
+      <input type="text" placeholder="Postal Code" required>
+
+      <h3>Payment Method</h3>
+      <select required>
+        <option value="">Select</option>
+        <option value="cash">Cash On Delivery</option>
+        <option value="gcash">GCash</option>
+        <option value="credit">Credit Card</option>
+        <option value="paypal">PayPal</option>
+      </select>
+
+      <button type="submit" class="checkout-btn">Buy now</button>
+    </form>
+  </section>
+
+
+
+  <script src="code/load.js"></script>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const product = JSON.parse(localStorage.getItem("checkoutProduct"));
+    if (!product) {
+        console.error("No checkout product found!");
+        return;
+    }
+
+    const container = document.querySelector('.checkout-item');
+    container.innerHTML = `
+    
+            <img src="${product.ImageSource}" alt="${product.ProductName}">
+            <div class="checkout-details">
+                <h2>${product.ProductName}</h2>
+                <p>₱${product.Price}</p>
+            </div>
+    
+    `;
+});
+</script>
+
+</body>
+</html>

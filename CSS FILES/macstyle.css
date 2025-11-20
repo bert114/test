@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100%;
+    
+  }
+
+.apple-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 80px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+   height: 80px;
+   backdrop-filter: blur(20px) saturate(200%);
+   -webkit-backdrop-filter: blur(20px) saturate(200%);
+   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+ 
+ }
+
+ .logo {
+    width: 50px; 
+    height: 50px;
+    background-image: url('applelogo2.png'); 
+    background-repeat: no-repeat;
+    background-size: contain;  
+    background-position: center;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.4)); 
+    transition: transform 0.2s ease, filter 0.3s ease;
+  
+  }
+  
+  .logo a {
+    position: relative;
+    transition: color 0.3s;
+    filter: drop-shadow(2px 2px 2px black);
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 60px;
+    top: 10px;
+    font-size: 25px;
+    
+  }
+
+  .navbar a {
+    filter: drop-shadow(2px 2px 2px black);
+    color: #f0f0f0;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  
+  .navbar a:hover {
+    color: #999;
+  }
+
+  .product-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 120px 50px;
+    background-color: #111;
+  }
+  
+
+  .product-card {
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    padding: 25px;
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+  }
+  
+  /*changes*/
+  .product-image {
+    width: 195px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 5px 15px rgba(255,255,255,0.3));
+  }
+  
+  .product-name {
+    color: white;
+    /*filter: drop-shadow(2px 5px 5px #bbb);*/
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+  }
+  
+  .product-desc {
+    /*filter: drop-shadow(0 0 5px #bbb);*/
+    color: white;
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+
+  .product-add {
+  background-color: #000; 
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 30px;
+  float: right;
+  transition: background-color 0.3s ease;
+}
+
+.product-add:hover {
+  background-color: #333;
+}

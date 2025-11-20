@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+  <link rel="stylesheet" href="CSS FILES/macstyle.css">
+      <link rel="icon" type="image/png" href="./Images/FAVICON.png">
+  <script src="code/script.js"></script>
+</head>
+
+<body>
+  <header class="apple-header">
+    <div class="logo"> <a id="home-page" href="AppleWebsite.html">Home</a></div>
+    <nav class="navbar">
+      <!--
+      <a href="#" class="links" onclick="loadData('Mac',event)">Mac</a>
+      <a href="#" class="links"onclick="loadData('iPhone',event)">iPhone</a>
+      <a href="#" class="links" onclick="loadData('iPad',event)">iPad</a>
+      <a href="#" class="links" onclick="loadData('Watch',event)">Watch</a> 
+      -->
+         <a href="products.html?category=Mac">Mac</a>
+      <a href="products.html?category=iPhone">iPhone</a>
+      <a href="products.html?category=iPad">iPad</a>
+      <a href="products.html?category=Watch">Watch</a>
+      
+      <a href="supportpage.html">Support</a>
+      <a href="MainCheckOutpage.html">Checkout</a>
+      <a href="cartpage.html">Cart</a>
+    </nav>
+  </header>
+
+  <section class="product-section">
+    <div class="product-card"></div>
+<!--
+        <div class="product-card">
+      <img src="images/MacBookPro-front.png" alt="MacBookPro" class="product-image">
+      <h2 class="product-name">MacBook Pro</h2>
+      <p class="product-desc">Price: ₱64,990</p>
+      <button class="product-add" onclick="viewButtonClicked('Macbook_Pro')">View</button>
+    </div>
+    <div class="product-card">
+      <img src="Images/MacBookAir-front.png" alt="MacBookAir" class="product-image">
+      <h2 class="product-name">MacBook Air</h2>
+      <p class="product-desc">Price: ₱99,990</p>
+      <button class="product-add" onclick="viewButtonClicked('Macbook_Air')">View</button>
+    </div>
+    <div class="product-card">
+      <img src="Images/iMac-front.png" alt="iMac" class="product-image">
+      <h2 class="product-name">iMac</h2>
+      <p class="product-desc">Price: ₱84,990</p>
+      <button class="product-add" onclick="viewButtonClicked('iMac')">View</button>
+    </div>
+    -->
+  </section>
+
+<script src="code/load.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+  if (category) {
+    loadData(category);
+  }
+});
+</script>
+</body>
+</html>

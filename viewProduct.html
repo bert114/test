@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Pro</title>
+    <link rel="stylesheet" href="CSS FILES/ProductDetails.css">
+      <link rel="icon" type="image/png" href="./Images/FAVICON.png">
+</head>
+<body>
+    <header class="apple-header">  
+    <div class="logo"> <a id="home-page" href="AppleWebsite.html" >Home</a></div>
+    <nav class="navbar">
+      <a href="products.html?category=Mac">Mac</a>
+      <a href="products.html?category=iPhone">iPhone</a>
+      <a href="products.html?category=iPad">iPad</a>
+      <a href="products.html?category=Watch">Watch</a>
+      <a href="supportpage.html">Support</a>
+      <a href="MainCheckOutpage.html">Checkout</a>
+      <a href="cartpage.html">Cart</a>
+    </nav>
+  </header>
+    <div class="product-card">
+        <div class="product-main">
+    
+        </div>
+
+        <div class="product-row">
+            <img src="images/macbookpro-keyboard.png" alt="macbookpro-keyboard" class="keyboard-image">
+            <img src="images/macbookpro-side.png" alt="macbookpro-side" class="side-image">
+            <img src="images/macbookpro-input.png" alt="macbookpro-input" class="input-image">
+            <img src="images/macbookpro-close.png" alt="macbookpro-close" class="close-image">
+        </div>
+
+
+    </div>
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+        <h2 class="review-heading">Customer Reviews (2)</h2>
+
+        <!--Ratings-->
+        <div class="review-card">
+            <div class="review-user">
+                <div class="avatar">L</div>
+                <div>
+                    <h4 class="review-name">Liz B.</h4>
+                    <p class="review-date">2025-07-09</p>
+                </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+            <p><strong>Color Family:</strong> Bee</p>
+            <p><strong>Aesthetics:</strong> ang cute ng color</p>
+            <p><strong>Response Time:</strong> ang bilis dumating! The MacBookPro is very good at office works and gaming.</p>
+            <p><strong>Durability:</strong> mukhang matibay at mahan-da yung quality. The MacBook Pro has a great tactile response.</p>
+          
+            <p class="helpful">👍 Helpful (15)</p>
+        </div>
+
+        <div class="review-card">
+            <div class="review-user">
+                <div class="avatar">M</div>
+                <div>
+                    <h4 class="review-name">M***</h4>
+                    <p class="review-date">2025-08-13</p>
+                </div>
+            </div>
+            <div class="star-rating">★★★★★</div>
+            <p><strong>Color Family:</strong> Shimmer</p>
+            <p><strong>Durability:</strong> Sturdy.</p>
+            <p><strong>Aesthetics:</strong> 👍 👍 👍</p>
+            <p><strong>Response Time:</strong> on time</p>
+            <p>It's really nice. Aesthetic, the colour is great 👍 👍 👍</p>
+        
+            <p class="helpful">👍 Helpful (20)</p>
+        </div>
+    </div>
+
+    <script src="./code/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector('.product-card');
+    const mainDiv = container.querySelector('.product-main');
+    const product = JSON.parse(localStorage.getItem("selectedProduct"));
+    if (!product) {
+        console.error("No product data found!");
+        return;
+    }
+
+    let specsHTML = '';
+    for (const [key, value] of Object.entries(product.Specs)) {
+        if (value) specsHTML += `<li><b>${key.replace(/_/g, ' ')}:</b> ${value}</li>`;
+    }
+
+    mainDiv.innerHTML = `
+        <img src="${product.ImageSource}" alt="${product.ProductName}" class="product-image">
+        <div class="product-info">
+            <h1 class="prod-name">${product.ProductName}</h1>
+            <div class="star-rating">${product.Rating}</div>
+            <h3 class="prod-price">Price: ₱${product.Price}</h3>
+            <ul class="prod-specs">${specsHTML}</ul>
+
+            <div class="quantity-container">
+                <label for="quantity">Quantity:</label>
+                <div class="quantity-box">
+                    <button class="quantity-btn" onclick="quantity('-')">−</button>
+                    <input type="number" id="quantity" class="quantity-input" value="1" readonly>
+                    <button class="quantity-btn" onclick="quantity('+')">+</button>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button class="buy" onclick="checkOutProcess()">Buy Now</button>
+                <button class="add" onclick="addToCart()">Add to Cart</button>
+
+            </div>
+        </div>
+    `;
+
+    const rowDiv = container.querySelector('.product-row');
+    rowDiv.innerHTML = `
+        <img src="${product.ImageSide[0]}" alt="macbookpro-keyboard" class="keyboard-image">
+        <img src="${product.ImageSide[1]}" alt="macbookpro-side" class="side-image">
+        <img src="${product.ImageSide[2]}" alt="macbookpro-input" class="input-image">
+        <img src="${product.ImageSide[3]}" alt="macbookpro-close" class="close-image">
+    `;
+});
+</script>
+
+</body>
+</html>
